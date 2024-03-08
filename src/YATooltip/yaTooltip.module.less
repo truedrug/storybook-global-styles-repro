@@ -1,0 +1,38 @@
+.yaTooltip {
+  .tooltipInnerClass() {
+    @apply px-2 py-1;
+    @apply bg-grey-1;
+    @apply flex items-center;
+    border-radius: 2px;
+    min-height: 0;
+  }
+
+  .tooltipArrowClass() {
+    @apply w-2 h-2;
+    @apply bg-grey-1;
+  }
+
+  :global {
+    .ant-tooltip-inner {
+      .tooltipInnerClass();
+    }
+
+    .ant-tooltip-arrow-content {
+      .tooltipArrowClass();
+    }
+  }
+
+  &.error {
+    :global {
+      .ant-tooltip-inner {
+        .tooltipInnerClass();
+        @apply bg-red-3;
+      }
+
+      .ant-tooltip-arrow-content {
+        .tooltipArrowClass();
+        @apply bg-red-3;
+      }
+    }
+  }
+}

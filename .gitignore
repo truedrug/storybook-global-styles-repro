@@ -1,0 +1,9 @@
+# Node artifact files
+node_modules/
+server/node_modules/
+lib/
+
+*.tgz
+.DS_Store
+storybook-static/
+coverage/**
